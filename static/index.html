@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Traform ACL 자동화 Tool</title>
+<link rel="stylesheet" href="/static/app.css?v=__V__">
+</head>
+<body>
+<a class="skip-link" href="#view">본문으로 건너뛰기</a>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="sidebar-brand"><div class="brand-icon">T</div><div><div class="brand-name">Traform ACL 도구</div><div class="brand-sub">SG 접근제어 자동화</div></div></div>
+    <div class="awsbar"><button type="button" class="awspill" id="awspill" aria-label="AWS 자격인증">AWS 자격인증</button></div>
+    <div class="bknudge" id="bknudge" role="status"></div>
+    <nav class="sidebar-nav" id="tabs" aria-label="주 메뉴"></nav>
+    <div class="sidebar-foot" id="vfoot"></div>
+  </aside>
+  <div class="main">
+    <div class="topbar">
+      <div><span class="hlabel">유형</span><div class="combo" id="c1"></div></div>
+      <div><span class="hlabel">종류</span><div class="combo" id="c2"></div></div>
+      <div><span class="hlabel">환경</span><div class="combo" id="c3"></div></div>
+      <div><span class="hlabel">리전 / 티어</span><div class="combo" id="c4"></div></div>
+      <div><span class="hlabel">티켓번호</span><input type="text" id="ticket" placeholder="ISRIR-12345" size="16" aria-label="티켓번호"><div id="tkinfo" class="mut" style="font-size:11.5px;max-width:260px"></div></div>
+      <div style="margin-left:auto;position:relative;flex:1 1 320px;max-width:520px"><span class="hlabel">통합 검색 · IP / 도메인 / 태그 / SG ID <span style="font-weight:400;text-transform:none">( / 키로 이동)</span></span>
+        <input type="text" id="gq" style="width:100%" placeholder="예) 10.162.135.5 · 10.162.0.0/16 · app.example.com · match3 · sg-0abc" autocomplete="off"><div class="pkp gres" id="gres" style="display:none"></div></div>
+    </div>
+    <main class="content" id="main"><div id="vbanner"></div><div id="view" tabindex="-1"></div></main>
+  </div>
+</div>
+<div id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+<script src="/static/js/core.js?v=__V__"></script>
+<script src="/static/js/acl.js?v=__V__"></script>
+<script src="/static/js/work.js?v=__V__"></script>
+<script src="/static/js/meta.js?v=__V__"></script>
+<script src="/static/js/config.js?v=__V__"></script>
+<script src="/static/js/search_version.js?v=__V__"></script>
+<script src="/static/js/wizard.js?v=__V__"></script>
+<script src="/static/js/undo.js?v=__V__"></script>
+<script src="/static/js/dist.js?v=__V__"></script>
+<script src="/static/js/aws.js?v=__V__"></script>
+<script src="/static/js/excel.js?v=__V__"></script>
+<script src="/static/js/backup.js?v=__V__"></script>
+<script src="/static/js/selfcheck.js?v=__V__"></script>
+<script src="/static/js/awsstatus.js?v=__V__"></script>
+<script src="/static/js/reports.js?v=__V__"></script>
+<script src="/static/js/review.js?v=__V__"></script>
+<script src="/static/js/ticketauto.js?v=__V__"></script>
+<script src="/static/js/a11y.js?v=__V__"></script>
+<script src="/static/js/uxkit.js?v=__V__"></script>
+<script src="/static/js/dock.js?v=__V__"></script>
+<script src="/static/js/integrations.js?v=__V__"></script>
+</body>
+</html>

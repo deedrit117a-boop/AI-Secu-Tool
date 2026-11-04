@@ -1,0 +1,2699 @@
+{
+  "envs": {
+    "game-ChaoszeroNightmare-live": {
+      "_label": "ChaoszeroNightmare · live · apne1",
+      "_sg_dir": "aws/live/apne1/sg/sg_rule",
+      "sgs": {}
+    },
+    "game-ChaoszeroNightmare-review": {
+      "_label": "ChaoszeroNightmare · review · apne1",
+      "_sg_dir": "aws/review/apne1/sg/sg_rule",
+      "sgs": {
+        "re-jp-czn-bot-ec2-sg": {
+          "alias": "",
+          "sg_id": "sg-0c060e086e66a1bb7",
+          "tags": []
+        },
+        "re-jp-czn-bt-ec2-sg": {
+          "alias": "",
+          "sg_id": "sg-034501f261630c92d",
+          "tags": []
+        },
+        "re-jp-czn-ent-alb-sg": {
+          "alias": "",
+          "sg_id": "sg-08e23a10ad07bb6f5",
+          "tags": []
+        },
+        "re-jp-czn-ent-ec2-sg": {
+          "alias": "",
+          "sg_id": "sg-0301eb27ab23c5784",
+          "tags": []
+        },
+        "re-jp-czn-game-alb-sg": {
+          "alias": "10.162.142.8, 18.177.203.244",
+          "sg_id": "sg-004a7ad5ce58a95a5",
+          "tags": []
+        },
+        "re-jp-czn-game-db-sg": {
+          "alias": "10.162.142.198",
+          "sg_id": "sg-01c82a2df5cdae1d4",
+          "tags": []
+        },
+        "re-jp-czn-game-ec2-sg": {
+          "alias": "10.162.142.115",
+          "sg_id": "sg-020b935dece4253cb",
+          "tags": []
+        },
+        "re-jp-czn-game-ecs-sg": {
+          "alias": "",
+          "sg_id": "sg-057225745c5e8d168",
+          "tags": []
+        },
+        "re-jp-czn-game-logdb-sg": {
+          "alias": "",
+          "sg_id": "sg-0826b0495a4e7045b",
+          "tags": []
+        },
+        "re-jp-czn-game-memorydb-sg": {
+          "alias": "",
+          "sg_id": "sg-05596c7c809da34b8",
+          "tags": []
+        },
+        "re-jp-czn-game-redis-sg": {
+          "alias": "10.162.142.222",
+          "sg_id": "sg-0cafc9176d7309b61",
+          "tags": []
+        },
+        "re-jp-czn-gmt-alb-sg": {
+          "alias": "10.162.142.55, 13.196.251.132",
+          "sg_id": "sg-070ea530e559b21d8",
+          "tags": []
+        },
+        "re-jp-czn-gmt-ec2-sg": {
+          "alias": "10.162.142.80",
+          "sg_id": "sg-08588d763377f146f",
+          "tags": []
+        },
+        "re-jp-czn-log-ec2-sg": {
+          "alias": "10.162.142.107",
+          "sg_id": "sg-0e39a50cb17830cea",
+          "tags": []
+        },
+        "re-jp-czn-log-nlb-sg": {
+          "alias": "10.162.142.77, 10.162.142.187",
+          "sg_id": "sg-052341d6dd1bd1875",
+          "tags": []
+        },
+        "re-jp-czn-mon-alb-sg": {
+          "alias": "10.162.142.22, 35.76.153.12",
+          "sg_id": "sg-0a59b4ba37f2efebc",
+          "tags": []
+        },
+        "re-jp-czn-mon-ec2-sg": {
+          "alias": "10.162.142.125",
+          "sg_id": "sg-0109f7e00f7305862",
+          "tags": []
+        }
+      },
+      "subnets": [
+        {
+          "ipv4_cidr": "10.162.142.0/27",
+          "nat_ip": "-",
+          "subnet_name": "re-jp-czn-pub-1-a",
+          "vpc_id": "vpc-00cd3db386b6c15c7"
+        },
+        {
+          "ipv4_cidr": "10.162.142.128/26",
+          "nat_ip": "13.231.88.58",
+          "subnet_name": "re-jp-czn-pri-1-c",
+          "vpc_id": "vpc-00cd3db386b6c15c7"
+        },
+        {
+          "ipv4_cidr": "10.162.142.192/27",
+          "nat_ip": "-",
+          "subnet_name": "re-jp-czn-db-1-a",
+          "vpc_id": "vpc-00cd3db386b6c15c7"
+        },
+        {
+          "ipv4_cidr": "10.162.142.224/27",
+          "nat_ip": "-",
+          "subnet_name": "re-jp-czn-db-1-c",
+          "vpc_id": "vpc-00cd3db386b6c15c7"
+        },
+        {
+          "ipv4_cidr": "10.162.142.32/27",
+          "nat_ip": "-",
+          "subnet_name": "re-jp-czn-pub-1-c",
+          "vpc_id": "vpc-00cd3db386b6c15c7"
+        },
+        {
+          "ipv4_cidr": "10.162.142.64/26",
+          "nat_ip": "18.176.192.135",
+          "subnet_name": "re-jp-czn-pri-1-a",
+          "vpc_id": "vpc-00cd3db386b6c15c7"
+        }
+      ]
+    },
+    "game-Eipc7-live-steam": {
+      "_label": "Eipc7 · live-steam · usw2",
+      "_sg_dir": "aws/live-steam/usw2/sg/sg_rule",
+      "sgs": {
+        "l-st-ep-admin-ec2-sg": {
+          "alias": "10.166.17.90",
+          "sg_id": "sg-00e9b1248768bc44b",
+          "tags": []
+        },
+        "l-st-ep-ar-tsv-ec2-sg": {
+          "alias": "10.166.17.74, 10.166.17.179",
+          "sg_id": "sg-05dad356eeb76cbca",
+          "tags": []
+        },
+        "l-st-ep-ar-tsv-nlb-sg": {
+          "alias": "10.166.17.42, 10.166.17.238",
+          "sg_id": "sg-0ec936b75b159359c",
+          "tags": []
+        },
+        "l-st-ep-arena-ec2-sg": {
+          "alias": "10.166.17.20, 10.166.17.28, 10.166.17.53, 10.166.17.100, 10.166.17.151, 10.166.17.175, 10.166.17.193, 10.166.17.247",
+          "sg_id": "sg-0c8538f11a03e6d1d",
+          "tags": []
+        },
+        "l-st-ep-bt-alb-sg": {
+          "alias": "10.166.17.55, 10.166.17.194",
+          "sg_id": "sg-0dfd412f6aa43a60d",
+          "tags": []
+        },
+        "l-st-ep-bt-ec2-sg": {
+          "alias": "10.166.17.70, 10.166.17.79, 10.166.17.113, 10.166.17.185, 10.166.17.197, 10.166.17.209",
+          "sg_id": "sg-01b05e7d2e57fc913",
+          "tags": []
+        },
+        "l-st-ep-game-memcached-sg": {
+          "alias": "10.166.16.166, 10.166.16.198",
+          "sg_id": "sg-0638809650c6ec1f0",
+          "tags": []
+        },
+        "l-st-ep-game-rds-sg": {
+          "alias": "10.166.16.144, 10.166.16.176, 10.166.16.196",
+          "sg_id": "sg-05136397ffe3ab5ae",
+          "tags": []
+        },
+        "l-st-ep-game-redis-sg": {
+          "alias": "10.166.16.149, 10.166.16.174, 10.166.16.226, 10.166.16.230",
+          "sg_id": "sg-042d788b788033617",
+          "tags": []
+        },
+        "l-st-ep-gate-alb-sg": {
+          "alias": "10.166.16.36, 10.166.16.37, 10.166.16.69, 10.166.16.82, 10.166.16.84, 10.166.16.87, 16.145.171.153, 35.167.86.140, 44.232.156.18, 54.69.135.40 외 2개",
+          "sg_id": "sg-032f263cbca004f2b",
+          "tags": []
+        },
+        "l-st-ep-gate-ec2-sg": {
+          "alias": "10.166.17.120, 10.166.17.161",
+          "sg_id": "sg-08708f120c39866d2",
+          "tags": []
+        },
+        "l-st-ep-gt-alb-sg": {
+          "alias": "10.166.16.55, 10.166.16.109, 32.186.158.242, 32.188.36.203",
+          "sg_id": "sg-0ee0ffcbf184f9312",
+          "tags": []
+        },
+        "l-st-ep-gt-ec2-sg": {
+          "alias": "10.166.17.6, 10.166.17.12, 10.166.17.223, 10.166.17.243",
+          "sg_id": "sg-0c3253c9e32027e31",
+          "tags": []
+        },
+        "l-st-ep-json-ec2-sg": {
+          "alias": "10.166.17.75, 10.166.17.212",
+          "sg_id": "sg-02dbeac5e5561969a",
+          "tags": []
+        },
+        "l-st-ep-json-nlb-sg": {
+          "alias": "10.166.17.52, 10.166.17.182",
+          "sg_id": "sg-0e8840dfa5f23c23b",
+          "tags": []
+        },
+        "l-st-ep-log-rds-sg": {
+          "alias": "10.166.16.137, 10.166.16.211",
+          "sg_id": "sg-04f2a8be4e02ddb1b",
+          "tags": []
+        },
+        "l-st-ep-match-ec2-sg": {
+          "alias": "10.166.17.111, 10.166.17.116, 10.166.17.164, 10.166.17.253",
+          "sg_id": "sg-07bc20c1168af4ccc",
+          "tags": []
+        },
+        "l-st-ep-match-ext-nlb-sg": {
+          "alias": "10.166.16.38, 10.166.16.93, 34.208.64.188, 184.33.39.75",
+          "sg_id": "sg-0b7eb48e694eb06ca",
+          "tags": []
+        },
+        "l-st-ep-match-int-nlb-sg": {
+          "alias": "10.166.17.40, 10.166.17.196",
+          "sg_id": "sg-0b97aa19e0a160d4a",
+          "tags": []
+        },
+        "l-st-ep-opt-ec2-sg": {
+          "alias": "10.166.17.66",
+          "sg_id": "sg-03d262b76cd207030",
+          "tags": []
+        },
+        "l-st-ep-star-ec2-sg": {
+          "alias": "10.166.17.4, 10.166.17.7, 10.166.17.10, 10.166.17.17, 10.166.17.18, 10.166.17.19, 10.166.17.21, 10.166.17.39, 10.166.17.44, 10.166.17.47 외 40개",
+          "sg_id": "sg-028912c15274a1493",
+          "tags": []
+        },
+        "l-st-ep-star-ext-nlb-sg": {
+          "alias": "10.166.16.53, 10.166.16.77, 16.147.126.158, 54.149.18.62",
+          "sg_id": "sg-0aa199050951f13e3",
+          "tags": []
+        },
+        "l-st-ep-star-int-nlb-sg": {
+          "alias": "10.166.17.81, 10.166.17.148",
+          "sg_id": "sg-0cf7928ded5a02700",
+          "tags": []
+        },
+        "l-st-ep-tsv-ec2-sg": {
+          "alias": "10.166.17.87, 10.166.17.240",
+          "sg_id": "sg-0814d899419375120",
+          "tags": []
+        },
+        "l-st-ep-tsv-nlb-sg": {
+          "alias": "10.166.17.68, 10.166.17.144",
+          "sg_id": "sg-0ccb9d4fe74d06a2c",
+          "tags": []
+        }
+      },
+      "subnets": [
+        {
+          "ipv4_cidr": "10.166.16.0/26",
+          "nat_ip": "-",
+          "subnet_name": "l-st-ep-pub-1-a",
+          "vpc_id": "vpc-0e6b1309badf51583"
+        },
+        {
+          "ipv4_cidr": "10.166.16.128/26",
+          "nat_ip": "-",
+          "subnet_name": "l-st-ep-db-1-a",
+          "vpc_id": "vpc-0e6b1309badf51583"
+        },
+        {
+          "ipv4_cidr": "10.166.16.192/26",
+          "nat_ip": "-",
+          "subnet_name": "l-st-ep-db-1-c",
+          "vpc_id": "vpc-0e6b1309badf51583"
+        },
+        {
+          "ipv4_cidr": "10.166.16.64/26",
+          "nat_ip": "-",
+          "subnet_name": "l-st-ep-pub-1-c",
+          "vpc_id": "vpc-0e6b1309badf51583"
+        },
+        {
+          "ipv4_cidr": "10.166.17.0/25",
+          "nat_ip": "34.214.194.49",
+          "subnet_name": "l-st-ep-pri-1-a",
+          "vpc_id": "vpc-0e6b1309badf51583"
+        },
+        {
+          "ipv4_cidr": "10.166.17.128/25",
+          "nat_ip": "54.189.161.229",
+          "subnet_name": "l-st-ep-pri-1-c",
+          "vpc_id": "vpc-0e6b1309badf51583"
+        }
+      ]
+    },
+    "game-Lordnine-Asia-live": {
+      "_label": "Lordnine-Asia · live · ape1",
+      "_sg_dir": "aws/live/ape1/sg/sg_rule",
+      "sgs": {
+        "l-hk-l9-account-db-sg": {
+          "alias": "10.168.15.71, 10.168.15.122, 10.168.15.135, 10.168.15.158",
+          "sg_id": "sg-042283f7d0e3c645a",
+          "tags": []
+        },
+        "l-hk-l9-account-mq-sg": {
+          "alias": "10.168.11.211, 10.168.12.67, 10.168.14.205",
+          "sg_id": "sg-0d6574e3da726248b",
+          "tags": []
+        },
+        "l-hk-l9-auth-api-alb-sg": {
+          "alias": "10.168.8.41, 10.168.8.108, 10.168.9.84, 10.168.13.24, 10.168.13.103, 16.163.137.226, 16.163.190.142, 16.163.216.129, 43.198.53.175, 95.41.45.243",
+          "sg_id": "sg-0d1ad212ac0e3a020",
+          "tags": []
+        },
+        "l-hk-l9-auth-api-ecs-sg": {
+          "alias": "10.168.10.10, 10.168.10.105, 10.168.10.120, 10.168.10.218, 10.168.11.28, 10.168.11.73, 10.168.11.241, 10.168.12.123, 10.168.12.131, 10.168.12.145 외 10개",
+          "sg_id": "sg-083953904d8c0a5e7",
+          "tags": []
+        },
+        "l-hk-l9-bot-ec2-sg": {
+          "alias": "10.168.8.25, 10.168.10.54, 10.168.10.126, 10.168.10.208, 10.168.11.20, 10.168.11.53, 10.168.11.68, 10.168.11.104, 10.168.12.61, 10.168.12.79 외 12개",
+          "sg_id": "sg-04da2929482a000b5",
+          "tags": []
+        },
+        "l-hk-l9-detect-elasticache-sg": {
+          "alias": "10.168.15.56, 10.168.15.167",
+          "sg_id": "sg-05fdc9c519d4ca5a2",
+          "tags": []
+        },
+        "l-hk-l9-front-api-alb-sg": {
+          "alias": "10.168.8.251, 10.168.9.15, 10.168.13.99, 16.106.17.225, 16.106.19.10, 16.163.251.194",
+          "sg_id": "sg-06fdf6c0ad983b0e3",
+          "tags": []
+        },
+        "l-hk-l9-front-api-ecs-sg": {
+          "alias": "10.168.10.179, 10.168.11.185, 10.168.12.180, 10.168.14.191, 10.168.14.236",
+          "sg_id": "sg-0ea2b6cba26af945a",
+          "tags": []
+        },
+        "l-hk-l9-game-ec2-sg": {
+          "alias": "10.168.10.66, 10.168.10.106, 10.168.10.110, 10.168.10.216, 10.168.11.40, 10.168.11.117, 10.168.11.120, 10.168.11.133, 10.168.11.204, 10.168.11.209 외 31개",
+          "sg_id": "sg-0e03b4302d8e1bf72",
+          "tags": []
+        },
+        "l-hk-l9-gdb-ec2-sg": {
+          "alias": "10.168.10.12, 10.168.10.73, 10.168.10.114, 10.168.10.168, 10.168.10.198, 10.168.11.54, 10.168.11.107, 10.168.11.111, 10.168.11.162, 10.168.11.179 외 31개",
+          "sg_id": "sg-0d761f3ce34ea18f2",
+          "tags": []
+        },
+        "l-hk-l9-gw-ec2-sg": {
+          "alias": "10.168.8.20, 10.168.8.83, 10.168.8.93, 10.168.8.105, 10.168.8.124, 10.168.8.136, 10.168.8.142, 10.168.8.152, 10.168.8.169, 10.168.8.173 외 152개",
+          "sg_id": "sg-04245814f3f058b0a",
+          "tags": []
+        },
+        "l-hk-l9-idb-ec2-sg": {
+          "alias": "10.168.10.50, 10.168.10.248, 10.168.12.152, 10.168.14.17, 10.168.14.79",
+          "sg_id": "sg-010218a3612444db4",
+          "tags": []
+        },
+        "l-hk-l9-inter-ec2-sg": {
+          "alias": "10.168.10.229, 10.168.10.232, 10.168.12.234, 10.168.14.9, 10.168.14.26",
+          "sg_id": "sg-030ae07b673f8ec3a",
+          "tags": []
+        },
+        "l-hk-l9-log-api-alb-sg": {
+          "alias": "10.168.11.0, 10.168.12.127, 10.168.14.78",
+          "sg_id": "sg-070f10d42fa42cdf9",
+          "tags": []
+        },
+        "l-hk-l9-log-api-ecs-sg": {
+          "alias": "10.168.10.89, 10.168.12.42, 10.168.12.174, 10.168.14.175, 10.168.14.221",
+          "sg_id": "sg-0b3f1c3e1afb5ab1d",
+          "tags": []
+        },
+        "l-hk-l9-log-db-sg": {
+          "alias": "10.168.15.13, 10.168.15.19, 10.168.15.47, 10.168.15.55, 10.168.15.106, 10.168.15.109, 10.168.15.110, 10.168.15.155, 10.168.15.175, 10.168.15.184",
+          "sg_id": "sg-0945a3ad2d4c80da1",
+          "tags": []
+        },
+        "l-hk-l9-login-ec2-sg": {
+          "alias": "10.168.8.49, 10.168.8.183, 10.168.9.184, 10.168.13.59, 10.168.13.67, 16.163.211.84, 18.163.162.124, 18.167.26.222, 95.41.4.102",
+          "sg_id": "sg-0c2a23efa60af876f",
+          "tags": []
+        },
+        "l-hk-l9-noti-api-alb-sg": {
+          "alias": "10.168.8.50, 10.168.9.152, 10.168.13.42, 18.163.32.71, 18.166.116.111, 18.167.236.217",
+          "sg_id": "sg-0038a6fbb90058015",
+          "tags": []
+        },
+        "l-hk-l9-noti-api-ecs-sg": {
+          "alias": "10.168.10.56, 10.168.10.242, 10.168.12.125, 10.168.12.208, 10.168.14.107, 10.168.14.232, 10.168.14.241",
+          "sg_id": "sg-0f3dd62da4934f453",
+          "tags": []
+        },
+        "l-hk-l9-op-api-alb-sg": {
+          "alias": "10.168.8.9, 10.168.9.40, 16.106.14.43, 18.166.232.51",
+          "sg_id": "sg-0a3d1f7d84c4bc91e",
+          "tags": []
+        },
+        "l-hk-l9-op-api-ecs-sg": {
+          "alias": "10.168.10.6",
+          "sg_id": "sg-014a618ece72f02c1",
+          "tags": []
+        },
+        "l-hk-l9-op-front-api-alb-sg": {
+          "alias": "10.168.9.239, 10.168.13.176, 16.162.236.151, 95.40.139.115",
+          "sg_id": "sg-0ddddbde0276eb953",
+          "tags": []
+        },
+        "l-hk-l9-op-front-api-ecs-sg": {
+          "alias": "10.168.12.172",
+          "sg_id": "sg-04a1fc51beb9bf700",
+          "tags": []
+        },
+        "l-hk-l9-opt-ec2-sg": {
+          "alias": "10.168.11.134",
+          "sg_id": "sg-0e6bb5ef171481fe9",
+          "tags": []
+        },
+        "l-hk-l9-shard-db-sg": {
+          "alias": "10.168.15.5, 10.168.15.6, 10.168.15.15, 10.168.15.16, 10.168.15.18, 10.168.15.22, 10.168.15.27, 10.168.15.35, 10.168.15.36, 10.168.15.43 외 30개",
+          "sg_id": "sg-024666025ed479e2f",
+          "tags": []
+        },
+        "l-hk-l9-world-db-sg": {
+          "alias": "10.168.15.9, 10.168.15.14, 10.168.15.21, 10.168.15.23, 10.168.15.24, 10.168.15.31, 10.168.15.50, 10.168.15.58, 10.168.15.82, 10.168.15.96 외 6개",
+          "sg_id": "sg-09368dd017ddf2940",
+          "tags": []
+        }
+      },
+      "subnets": [
+        {
+          "ipv4_cidr": "10.168.10.0/23",
+          "nat_ip": "16.163.183.180",
+          "subnet_name": "l-hk-l9-pri-1-a",
+          "vpc_id": "vpc-0e7a8c17671296d92"
+        },
+        {
+          "ipv4_cidr": "10.168.12.0/24",
+          "nat_ip": "16.163.71.94",
+          "subnet_name": "l-hk-l9-pri-1-b",
+          "vpc_id": "vpc-0e7a8c17671296d92"
+        },
+        {
+          "ipv4_cidr": "10.168.13.0/24",
+          "nat_ip": "-",
+          "subnet_name": "l-hk-l9-pub-1-c",
+          "vpc_id": "vpc-0e7a8c17671296d92"
+        },
+        {
+          "ipv4_cidr": "10.168.14.0/24",
+          "nat_ip": "16.162.71.35",
+          "subnet_name": "l-hk-l9-pri-1-c",
+          "vpc_id": "vpc-0e7a8c17671296d92"
+        },
+        {
+          "ipv4_cidr": "10.168.15.0/26",
+          "nat_ip": "-",
+          "subnet_name": "l-hk-l9-db-1-a",
+          "vpc_id": "vpc-0e7a8c17671296d92"
+        },
+        {
+          "ipv4_cidr": "10.168.15.128/26",
+          "nat_ip": "-",
+          "subnet_name": "l-hk-l9-db-1-c",
+          "vpc_id": "vpc-0e7a8c17671296d92"
+        },
+        {
+          "ipv4_cidr": "10.168.15.64/26",
+          "nat_ip": "-",
+          "subnet_name": "l-hk-l9-db-1-b",
+          "vpc_id": "vpc-0e7a8c17671296d92"
+        },
+        {
+          "ipv4_cidr": "10.168.8.0/24",
+          "nat_ip": "-",
+          "subnet_name": "l-hk-l9-pub-1-a",
+          "vpc_id": "vpc-0e7a8c17671296d92"
+        },
+        {
+          "ipv4_cidr": "10.168.9.0/24",
+          "nat_ip": "-",
+          "subnet_name": "l-hk-l9-pub-1-b",
+          "vpc_id": "vpc-0e7a8c17671296d92"
+        }
+      ]
+    },
+    "game-Lordnine-Asia-qa-ai": {
+      "_label": "Lordnine-Asia · qa-ai · ape1",
+      "_sg_dir": "aws/qa-ai/ape1/sg/sg_rule",
+      "sgs": {
+        "qai-hk-l9-account-mq-sg": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "qai-hk-l9-auth-api-alb-sg": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "qai-hk-l9-auth-api-ecs-sg": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "qai-hk-l9-front-api-alb-sg": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "qai-hk-l9-front-api-ecs-sg": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "qai-hk-l9-gdb-ec2-sg": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "qai-hk-l9-log-api-alb-sg": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "qai-hk-l9-log-api-ecs-sg": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "qai-hk-l9-log-db-sg": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "qai-hk-l9-noti-api-alb-sg": {
+          "alias": "",
+          "sg_id": "",
+          "tags": [
+            {
+              "type": "",
+              "value": "qa-ai-l9asia-noti-api.game.playstove.com"
+            }
+          ]
+        },
+        "qai-hk-l9-noti-api-ecs-sg": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "qai-hk-l9-op-api-alb-sg": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "qai-hk-l9-op-api-ecs-sg": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "qai-hk-l9-op-front-alb-sg": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "qai-hk-l9-op-front-ecs-sg": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "qai-hk-l9-wld-ec2-sg": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        }
+      },
+      "subnets": []
+    },
+    "game-Lordnine-Asia-qa0": {
+      "_label": "Lordnine-Asia · qa0 · ape1",
+      "_sg_dir": "aws/qa0/ape1/sg/sg_rule",
+      "sgs": {
+        "q0-hk-l9-account-mq-sg": {
+          "alias": "10.168.196.158",
+          "sg_id": "sg-0d830903c0566ae42",
+          "tags": []
+        },
+        "q0-hk-l9-auth-api-alb-sg": {
+          "alias": "10.168.196.18, 10.168.196.40, 43.198.133.175, 95.40.239.52",
+          "sg_id": "sg-0f93ba2da1275be23",
+          "tags": []
+        },
+        "q0-hk-l9-auth-api-ecs-sg": {
+          "alias": "10.168.196.235",
+          "sg_id": "sg-0dbe056dafdc193d8",
+          "tags": []
+        },
+        "q0-hk-l9-detect-elasticache-sg": {
+          "alias": "10.168.196.112",
+          "sg_id": "sg-07282abb8f4ed4b38",
+          "tags": []
+        },
+        "q0-hk-l9-front-api-alb-sg": {
+          "alias": "10.168.196.14, 10.168.196.49, 16.162.198.70, 54.46.113.21",
+          "sg_id": "sg-08f240fd00dd7b4f4",
+          "tags": []
+        },
+        "q0-hk-l9-front-api-ecs-sg": {
+          "alias": "10.168.196.215",
+          "sg_id": "sg-0bed683dde437130f",
+          "tags": []
+        },
+        "q0-hk-l9-gdb-ec2-sg": {
+          "alias": "10.168.196.141",
+          "sg_id": "sg-02c5109ef757a29c2",
+          "tags": []
+        },
+        "q0-hk-l9-jenkins-ec2-sg": {
+          "alias": "",
+          "sg_id": "sg-0aeb086b34979296a",
+          "tags": []
+        },
+        "q0-hk-l9-log-api-alb-sg": {
+          "alias": "10.168.196.179, 10.168.196.205",
+          "sg_id": "sg-080911a3ac57eec11",
+          "tags": []
+        },
+        "q0-hk-l9-log-api-ecs-sg": {
+          "alias": "10.168.196.152",
+          "sg_id": "sg-0ed9a55330943b1fe",
+          "tags": []
+        },
+        "q0-hk-l9-log-db-sg": {
+          "alias": "10.168.196.123",
+          "sg_id": "sg-05d71d53ca6d686e6",
+          "tags": []
+        },
+        "q0-hk-l9-noti-api-alb-sg": {
+          "alias": "10.168.196.13, 10.168.196.36, 43.198.195.91, 95.40.208.74",
+          "sg_id": "sg-07950b571ad7fadd2",
+          "tags": []
+        },
+        "q0-hk-l9-noti-api-ecs-sg": {
+          "alias": "10.168.196.249",
+          "sg_id": "sg-0e0a6388988e8468b",
+          "tags": []
+        },
+        "q0-hk-l9-op-api-alb-sg": {
+          "alias": "10.168.196.8, 10.168.196.37, 10.168.196.61, 16.106.13.101, 18.167.117.226, 95.41.5.232",
+          "sg_id": "sg-040bacaf13074b825",
+          "tags": []
+        },
+        "q0-hk-l9-op-api-ecs-sg": {
+          "alias": "10.168.196.209",
+          "sg_id": "sg-0f344e7a9c743e5e5",
+          "tags": []
+        },
+        "q0-hk-l9-op-front-api-alb-sg": {
+          "alias": "10.168.196.21, 10.168.196.50, 18.163.4.247, 18.163.32.70",
+          "sg_id": "sg-02ee336ece9b916ce",
+          "tags": []
+        },
+        "q0-hk-l9-op-front-api-ecs-sg": {
+          "alias": "10.168.196.250",
+          "sg_id": "sg-0e0a2a0205a8c4891",
+          "tags": []
+        },
+        "q0-hk-l9-wld-ec2-sg": {
+          "alias": "10.168.196.12, 43.198.221.80",
+          "sg_id": "sg-0481a62a0344040e9",
+          "tags": []
+        }
+      },
+      "subnets": [
+        {
+          "ipv4_cidr": "10.168.196.0/27",
+          "nat_ip": "-",
+          "subnet_name": "q0-hk-lord-asia-pub-1-a",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.196.128/26",
+          "nat_ip": "43.198.55.21",
+          "subnet_name": "q0-hk-lord-asia-pri-1-a",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.196.192/26",
+          "nat_ip": "43.198.55.21",
+          "subnet_name": "q0-hk-lord-asia-pri-1-c",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.196.32/27",
+          "nat_ip": "-",
+          "subnet_name": "q0-hk-lord-asia-pub-1-c",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.196.64/27",
+          "nat_ip": "-",
+          "subnet_name": "q0-hk-lord-asia-db-1-a",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.196.96/27",
+          "nat_ip": "-",
+          "subnet_name": "q0-hk-lord-asia-db-1-c",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.197.0/27",
+          "nat_ip": "-",
+          "subnet_name": "q0-hk-lord-asia-pub-2-a",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.197.128/26",
+          "nat_ip": "43.198.55.21",
+          "subnet_name": "q0-hk-lord-asia-pri-2-a",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.197.192/26",
+          "nat_ip": "43.198.55.21",
+          "subnet_name": "q0-hk-lord-asia-pri-2-c",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.197.32/27",
+          "nat_ip": "-",
+          "subnet_name": "q0-hk-lord-asia-pub-2-c",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.197.64/27",
+          "nat_ip": "-",
+          "subnet_name": "q0-hk-lord-asia-db-2-a",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.197.96/27",
+          "nat_ip": "-",
+          "subnet_name": "q0-hk-lord-asia-db-2-c",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        }
+      ]
+    },
+    "game-Lordnine-Asia-review": {
+      "_label": "Lordnine-Asia · review · ape1",
+      "_sg_dir": "aws/review/ape1/sg/sg_rule",
+      "sgs": {
+        "re-hk-l9-account-mq-sg": {
+          "alias": "10.168.196.155, 10.168.196.232",
+          "sg_id": "sg-09eb759c05b3efffc",
+          "tags": []
+        },
+        "re-hk-l9-auth-api-alb-sg": {
+          "alias": "10.168.196.9, 10.168.196.59, 16.163.188.155, 95.41.16.212",
+          "sg_id": "sg-0cdbfeeda56c353bb",
+          "tags": []
+        },
+        "re-hk-l9-auth-api-ecs-sg": {
+          "alias": "10.168.196.175",
+          "sg_id": "sg-01918d5bb39eac861",
+          "tags": []
+        },
+        "re-hk-l9-front-api-alb-sg": {
+          "alias": "",
+          "sg_id": "sg-0a0c08101e8a0f9fb",
+          "tags": []
+        },
+        "re-hk-l9-front-api-ecs-sg": {
+          "alias": "",
+          "sg_id": "sg-00f0ff518e6814853",
+          "tags": []
+        },
+        "re-hk-l9-gdb-ec2-sg": {
+          "alias": "",
+          "sg_id": "sg-06a3559bad5c715d1",
+          "tags": []
+        },
+        "re-hk-l9-log-api-alb-sg": {
+          "alias": "10.168.196.172, 10.168.196.218",
+          "sg_id": "sg-023949db42d7850be",
+          "tags": []
+        },
+        "re-hk-l9-log-api-ecs-sg": {
+          "alias": "10.168.196.166",
+          "sg_id": "sg-0e3b44b73802c1fb1",
+          "tags": []
+        },
+        "re-hk-l9-log-db-sg": {
+          "alias": "",
+          "sg_id": "sg-0f45a974eb05edf68",
+          "tags": []
+        },
+        "re-hk-l9-noti-api-alb-sg": {
+          "alias": "10.168.196.19, 10.168.196.48, 18.167.211.186, 54.46.107.48",
+          "sg_id": "sg-05ecd5b7960a407a5",
+          "tags": []
+        },
+        "re-hk-l9-noti-api-ecs-sg": {
+          "alias": "10.168.196.207",
+          "sg_id": "sg-0070db1c13db4cf74",
+          "tags": []
+        },
+        "re-hk-l9-op-api-alb-sg": {
+          "alias": "10.168.196.15, 10.168.196.57, 18.162.165.155, 95.40.166.227",
+          "sg_id": "sg-01dd74a02d6069d09",
+          "tags": []
+        },
+        "re-hk-l9-op-api-ecs-sg": {
+          "alias": "10.168.196.140",
+          "sg_id": "sg-05204d1f32a54d45e",
+          "tags": []
+        },
+        "re-hk-l9-op-front-api-alb-sg": {
+          "alias": "10.168.196.27, 10.168.196.43, 18.162.132.106, 43.198.165.158",
+          "sg_id": "sg-0e76c07052a4dad54",
+          "tags": []
+        },
+        "re-hk-l9-op-front-api-ecs-sg": {
+          "alias": "10.168.196.168",
+          "sg_id": "sg-085a00d3e6edee2da",
+          "tags": []
+        },
+        "re-hk-l9-wld-ec2-sg": {
+          "alias": "10.168.196.47, 10.168.196.56, 18.162.128.235, 54.46.90.52",
+          "sg_id": "sg-0af16d2ba819b4f89",
+          "tags": []
+        }
+      },
+      "subnets": [
+        {
+          "ipv4_cidr": "10.168.196.0/27",
+          "nat_ip": "-",
+          "subnet_name": "q0-hk-lord-asia-pub-1-a",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.196.128/26",
+          "nat_ip": "43.198.55.21",
+          "subnet_name": "q0-hk-lord-asia-pri-1-a",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.196.192/26",
+          "nat_ip": "43.198.55.21",
+          "subnet_name": "q0-hk-lord-asia-pri-1-c",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.196.32/27",
+          "nat_ip": "-",
+          "subnet_name": "q0-hk-lord-asia-pub-1-c",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.196.64/27",
+          "nat_ip": "-",
+          "subnet_name": "q0-hk-lord-asia-db-1-a",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.196.96/27",
+          "nat_ip": "-",
+          "subnet_name": "q0-hk-lord-asia-db-1-c",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.197.0/27",
+          "nat_ip": "-",
+          "subnet_name": "q0-hk-lord-asia-pub-2-a",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.197.128/26",
+          "nat_ip": "43.198.55.21",
+          "subnet_name": "q0-hk-lord-asia-pri-2-a",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.197.192/26",
+          "nat_ip": "43.198.55.21",
+          "subnet_name": "q0-hk-lord-asia-pri-2-c",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.197.32/27",
+          "nat_ip": "-",
+          "subnet_name": "q0-hk-lord-asia-pub-2-c",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.197.64/27",
+          "nat_ip": "-",
+          "subnet_name": "q0-hk-lord-asia-db-2-a",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        },
+        {
+          "ipv4_cidr": "10.168.197.96/27",
+          "nat_ip": "-",
+          "subnet_name": "q0-hk-lord-asia-db-2-c",
+          "vpc_id": "vpc-0c26e830bd7b64a09"
+        }
+      ]
+    },
+    "game-Lordnine-Global-qa-ai-mvoxomxk": {
+      "_label": "Lordnine-Global · qa-ai · apne1",
+      "_sg_dir": "aws/qai/apne1/sg/sg_rule",
+      "sgs": {
+        "q-ai-lord-account-mq-sg": {
+          "alias": "10.162.4.133",
+          "sg_id": "sg-0669cf1d0a9b7dcbf",
+          "tags": []
+        },
+        "q-ai-lord-auth-api-alb-sg": {
+          "alias": "10.162.4.35, 10.162.4.85, 13.193.251.70, 16.76.190.48",
+          "sg_id": "sg-03be2b5c5a31cf280",
+          "tags": []
+        },
+        "q-ai-lord-auth-api-ecs-sg": {
+          "alias": "10.162.4.235",
+          "sg_id": "sg-0325558f6ff46f2ff",
+          "tags": []
+        },
+        "q-ai-lord-front-api-alb-sg": {
+          "alias": "10.162.4.51, 10.162.4.91, 35.74.159.215, 35.76.1.19",
+          "sg_id": "sg-0819b02598fe5cd97",
+          "tags": []
+        },
+        "q-ai-lord-front-api-ecs-sg": {
+          "alias": "10.162.4.211",
+          "sg_id": "sg-0a0b1ecaaa4df8533",
+          "tags": []
+        },
+        "q-ai-lord-gdb-ec2-sg": {
+          "alias": "10.162.4.146",
+          "sg_id": "sg-09ee589e21443def1",
+          "tags": []
+        },
+        "q-ai-lord-log-api-alb-sg": {
+          "alias": "10.162.4.166, 10.162.4.242",
+          "sg_id": "sg-0180e5b8e07af0fee",
+          "tags": []
+        },
+        "q-ai-lord-log-api-ecs-sg": {
+          "alias": "10.162.4.165",
+          "sg_id": "sg-08251979472c1ea5d",
+          "tags": []
+        },
+        "q-ai-lord-log-db-sg": {
+          "alias": "10.162.4.170",
+          "sg_id": "sg-094aee5826af03bb8",
+          "tags": []
+        },
+        "q-ai-lord-noti-api-alb-sg": {
+          "alias": "10.162.4.26, 10.162.4.115, 13.112.139.95, 52.196.253.159",
+          "sg_id": "sg-04dfea302f91f2791",
+          "tags": [
+            {
+              "type": "",
+              "value": "qa-ai-lord-noti-api.game.playstove.com"
+            }
+          ]
+        },
+        "q-ai-lord-noti-api-ecs-sg": {
+          "alias": "10.162.4.197",
+          "sg_id": "sg-0150566aeb787dbf0",
+          "tags": []
+        },
+        "q-ai-lord-op-api-alb-sg": {
+          "alias": "10.162.4.33, 10.162.4.103, 13.192.11.71, 13.192.225.152",
+          "sg_id": "sg-0a02805cbd3800aa2",
+          "tags": []
+        },
+        "q-ai-lord-op-api-ecs-sg": {
+          "alias": "10.162.4.158",
+          "sg_id": "sg-00e4214010c6dacb5",
+          "tags": []
+        },
+        "q-ai-lord-op-front-api-alb-sg": {
+          "alias": "10.162.4.16, 10.162.4.107, 13.114.74.129, 18.181.54.150",
+          "sg_id": "sg-0cc23e6e0315e11ba",
+          "tags": []
+        },
+        "q-ai-lord-op-front-api-ecs-sg": {
+          "alias": "10.162.4.160",
+          "sg_id": "sg-090652e85a18bc84b",
+          "tags": []
+        },
+        "q-ai-lord-wld-ec2-sg": {
+          "alias": "3.114.59.57, 10.162.4.50, 10.162.4.84, 52.198.22.244",
+          "sg_id": "sg-0c1b2fc10c02f7ef0",
+          "tags": []
+        }
+      },
+      "subnets": [
+        {
+          "ipv4_cidr": "10.162.4.0/26",
+          "nat_ip": "-",
+          "subnet_name": "qa-lord-pub-1-a",
+          "vpc_id": "vpc-02a5e6671ff9f4a41"
+        },
+        {
+          "ipv4_cidr": "10.162.4.128/26",
+          "nat_ip": "35.76.189.95",
+          "subnet_name": "qa-lord-pri-1-a",
+          "vpc_id": "vpc-02a5e6671ff9f4a41"
+        },
+        {
+          "ipv4_cidr": "10.162.4.192/26",
+          "nat_ip": "35.76.189.95",
+          "subnet_name": "qa-lord-pri-2-c",
+          "vpc_id": "vpc-02a5e6671ff9f4a41"
+        },
+        {
+          "ipv4_cidr": "10.162.4.64/26",
+          "nat_ip": "-",
+          "subnet_name": "qa-lord-pub-2-c",
+          "vpc_id": "vpc-02a5e6671ff9f4a41"
+        }
+      ]
+    },
+    "game-bubblyz-review-review2-apne1-main": {
+      "_label": "bubblyz · review2 · apne1/main",
+      "_sg_dir": "aws/review/review2/apne1/main/sg/sg_rule",
+      "nat_ips": [],
+      "note": "",
+      "sgs": {
+        "r2-jp-bbz-game-rds-sg": {
+          "alias": "",
+          "sg_id": "sg-05d474c019d2860a4",
+          "tags": []
+        },
+        "r2-jp-bbz-gds-alb-sg": {
+          "alias": "",
+          "sg_id": "sg-0add882aee5595f38",
+          "tags": []
+        },
+        "r2-jp-bbz-gds-pub-alb-sg": {
+          "alias": "",
+          "sg_id": "sg-07568f4b2adbd4ad9",
+          "tags": []
+        },
+        "r2-jp-bbz-global-docdb-sg": {
+          "alias": "",
+          "sg_id": "sg-0679ed0c1571e3e08",
+          "tags": []
+        },
+        "r2-jp-bbz-ias-alb-sg": {
+          "alias": "",
+          "sg_id": "sg-09bb6f5e009307a71",
+          "tags": []
+        },
+        "r2-jp-bbz-ias-pub-alb-sg": {
+          "alias": "",
+          "sg_id": "sg-0e5e9e3e329bb79de",
+          "tags": []
+        },
+        "r2-jp-bbz-maa-nlb-sg": {
+          "alias": "",
+          "sg_id": "sg-0f5903865d63687b0",
+          "tags": []
+        },
+        "r2-jp-bbz-main-ec2-sg": {
+          "alias": "",
+          "sg_id": "sg-0cf345f1e40f080d9",
+          "tags": []
+        },
+        "r2-jp-bbz-mpd-nlb-sg": {
+          "alias": "",
+          "sg_id": "sg-021d5c2851492c04a",
+          "tags": []
+        }
+      },
+      "subnets": [
+        {
+          "ipv4_cidr": "10.162.135.192/27",
+          "nat_ip": "-",
+          "subnet_name": "r2-jp-main-bbz-db-1-a",
+          "vpc_id": "vpc-04c97d450f7c9d96f"
+        },
+        {
+          "ipv4_cidr": "10.162.135.224/27",
+          "nat_ip": "-",
+          "subnet_name": "r2-jp-main-bbz-db-1-c",
+          "vpc_id": "vpc-04c97d450f7c9d96f"
+        },
+        {
+          "ipv4_cidr": "10.162.135.64/26",
+          "nat_ip": "35.73.25.253",
+          "subnet_name": "r2-jp-main-bbz-pri-1-a",
+          "vpc_id": "vpc-04c97d450f7c9d96f"
+        },
+        {
+          "ipv4_cidr": "10.162.135.128/26",
+          "nat_ip": "35.73.25.253",
+          "subnet_name": "r2-jp-main-bbz-pri-1-c",
+          "vpc_id": "vpc-04c97d450f7c9d96f"
+        },
+        {
+          "ipv4_cidr": "10.162.135.0/27",
+          "nat_ip": "-",
+          "subnet_name": "r2-jp-main-bbz-pub-1-a",
+          "vpc_id": "vpc-04c97d450f7c9d96f"
+        },
+        {
+          "ipv4_cidr": "10.162.135.32/27",
+          "nat_ip": "-",
+          "subnet_name": "r2-jp-main-bbz-pub-1-c",
+          "vpc_id": "vpc-04c97d450f7c9d96f"
+        }
+      ],
+      "vpc_cidrs": []
+    },
+    "game-bubblyz-review-review2-apne1-sub": {
+      "_label": "bubblyz · review2 · apne1/sub",
+      "_sg_dir": "aws/review/review2/apne1/sub/sg/sg_rule",
+      "subnets": [
+        {
+          "ipv4_cidr": "10.162.137.192/27",
+          "nat_ip": "-",
+          "subnet_name": "r2-jp-sub-bbz-db-1-a",
+          "vpc_id": "vpc-08f4c96aab00f1f1d"
+        },
+        {
+          "ipv4_cidr": "10.162.137.224/27",
+          "nat_ip": "-",
+          "subnet_name": "r2-jp-sub-bbz-db-1-c",
+          "vpc_id": "vpc-08f4c96aab00f1f1d"
+        },
+        {
+          "ipv4_cidr": "10.162.137.64/26",
+          "nat_ip": "13.159.236.222",
+          "subnet_name": "r2-jp-sub-bbz-pri-1-a",
+          "vpc_id": "vpc-08f4c96aab00f1f1d"
+        },
+        {
+          "ipv4_cidr": "10.162.137.128/26",
+          "nat_ip": "13.159.236.222",
+          "subnet_name": "r2-jp-sub-bbz-pri-1-c",
+          "vpc_id": "vpc-08f4c96aab00f1f1d"
+        },
+        {
+          "ipv4_cidr": "10.162.137.0/27",
+          "nat_ip": "-",
+          "subnet_name": "r2-jp-sub-bbz-pub-1-a",
+          "vpc_id": "vpc-08f4c96aab00f1f1d"
+        },
+        {
+          "ipv4_cidr": "10.162.137.32/27",
+          "nat_ip": "-",
+          "subnet_name": "r2-jp-sub-bbz-pub-1-c",
+          "vpc_id": "vpc-08f4c96aab00f1f1d"
+        }
+      ]
+    },
+    "game-bubblyz-sandbox-sb0-apne1-main": {
+      "_label": "bubblyz · sandbox0 · apne1/main",
+      "_sg_dir": "aws/sandbox/sb0/apne1/main/sg/sg_rule",
+      "sgs": {},
+      "subnets": [
+        {
+          "ipv4_cidr": "10.162.132.192/27",
+          "nat_ip": "-",
+          "subnet_name": "s0-jp-main-bbz-db-1-a",
+          "vpc_id": "vpc-048cbdede49c6b9ba"
+        },
+        {
+          "ipv4_cidr": "10.162.132.224/27",
+          "nat_ip": "-",
+          "subnet_name": "s0-jp-main-bbz-db-1-c",
+          "vpc_id": "vpc-048cbdede49c6b9ba"
+        },
+        {
+          "ipv4_cidr": "10.162.132.64/26",
+          "nat_ip": "18.176.106.242",
+          "subnet_name": "s0-jp-main-bbz-pri-1-a",
+          "vpc_id": "vpc-048cbdede49c6b9ba"
+        },
+        {
+          "ipv4_cidr": "10.162.132.128/26",
+          "nat_ip": "54.64.25.94",
+          "subnet_name": "s0-jp-main-bbz-pri-1-c",
+          "vpc_id": "vpc-048cbdede49c6b9ba"
+        },
+        {
+          "ipv4_cidr": "10.162.132.0/27",
+          "nat_ip": "-",
+          "subnet_name": "s0-jp-main-bbz-pub-1-a",
+          "vpc_id": "vpc-048cbdede49c6b9ba"
+        },
+        {
+          "ipv4_cidr": "10.162.132.32/27",
+          "nat_ip": "-",
+          "subnet_name": "s0-jp-main-bbz-pub-1-c",
+          "vpc_id": "vpc-048cbdede49c6b9ba"
+        }
+      ]
+    },
+    "game-bubblyz-sandbox-sb1-apne1-main": {
+      "_label": "bubblyz · sandbox1 · apne1/main",
+      "_sg_dir": "aws/sandbox/sb1/apne1/main/sg/sg_rule",
+      "sgs": {},
+      "subnets": [
+        {
+          "ipv4_cidr": "10.162.148.192/27",
+          "nat_ip": "-",
+          "subnet_name": "s1-jp-main-bbz-db-1-a",
+          "vpc_id": "vpc-05bac722b80f4f11c"
+        },
+        {
+          "ipv4_cidr": "10.162.148.224/27",
+          "nat_ip": "-",
+          "subnet_name": "s1-jp-main-bbz-db-1-c",
+          "vpc_id": "vpc-05bac722b80f4f11c"
+        },
+        {
+          "ipv4_cidr": "10.162.148.64/26",
+          "nat_ip": "35.72.208.214",
+          "subnet_name": "s1-jp-main-bbz-pri-1-a",
+          "vpc_id": "vpc-05bac722b80f4f11c"
+        },
+        {
+          "ipv4_cidr": "10.162.148.128/26",
+          "nat_ip": "35.72.208.214",
+          "subnet_name": "s1-jp-main-bbz-pri-1-c",
+          "vpc_id": "vpc-05bac722b80f4f11c"
+        },
+        {
+          "ipv4_cidr": "10.162.148.0/27",
+          "nat_ip": "-",
+          "subnet_name": "s1-jp-main-bbz-pub-1-a",
+          "vpc_id": "vpc-05bac722b80f4f11c"
+        },
+        {
+          "ipv4_cidr": "10.162.148.32/27",
+          "nat_ip": "-",
+          "subnet_name": "s1-jp-main-bbz-pub-1-c",
+          "vpc_id": "vpc-05bac722b80f4f11c"
+        }
+      ]
+    },
+    "game-bubblyz-sandbox-sb1-apne1-sub": {
+      "_label": "bubblyz · sandbox1 · apne1/sub",
+      "_sg_dir": "aws/sandbox/sb1/apne1/sub/sg/sg_rule",
+      "sgs": {},
+      "subnets": [
+        {
+          "ipv4_cidr": "10.162.150.192/27",
+          "nat_ip": "-",
+          "subnet_name": "s1-jp-sub-bbz-db-1-a",
+          "vpc_id": "vpc-0cea4a08c33bda088"
+        },
+        {
+          "ipv4_cidr": "10.162.150.224/27",
+          "nat_ip": "-",
+          "subnet_name": "s1-jp-sub-bbz-db-1-c",
+          "vpc_id": "vpc-0cea4a08c33bda088"
+        },
+        {
+          "ipv4_cidr": "10.162.150.64/26",
+          "nat_ip": "54.168.71.204",
+          "subnet_name": "s1-jp-sub-bbz-pri-1-a",
+          "vpc_id": "vpc-0cea4a08c33bda088"
+        },
+        {
+          "ipv4_cidr": "10.162.150.128/26",
+          "nat_ip": "54.168.71.204",
+          "subnet_name": "s1-jp-sub-bbz-pri-1-c",
+          "vpc_id": "vpc-0cea4a08c33bda088"
+        },
+        {
+          "ipv4_cidr": "10.162.150.0/27",
+          "nat_ip": "-",
+          "subnet_name": "s1-jp-sub-bbz-pub-1-a",
+          "vpc_id": "vpc-0cea4a08c33bda088"
+        },
+        {
+          "ipv4_cidr": "10.162.150.32/27",
+          "nat_ip": "-",
+          "subnet_name": "s1-jp-sub-bbz-pub-1-c",
+          "vpc_id": "vpc-0cea4a08c33bda088"
+        }
+      ]
+    },
+    "game-bubblyz-sandbox-sb2-apne1-main": {
+      "_label": "bubblyz · sandbox2 · apne1/main",
+      "_sg_dir": "aws/sandbox/sb2/apne1/main/sg/sg_rule",
+      "subnets": [
+        {
+          "ipv4_cidr": "10.162.138.192/27",
+          "nat_ip": "-",
+          "subnet_name": "s2-jp-main-bbz-db-1-a",
+          "vpc_id": "vpc-0ca6afdd5da9aa376"
+        },
+        {
+          "ipv4_cidr": "10.162.138.224/27",
+          "nat_ip": "-",
+          "subnet_name": "s2-jp-main-bbz-db-1-c",
+          "vpc_id": "vpc-0ca6afdd5da9aa376"
+        },
+        {
+          "ipv4_cidr": "10.162.138.64/26",
+          "nat_ip": "13.158.91.139",
+          "subnet_name": "s2-jp-main-bbz-pri-1-a",
+          "vpc_id": "vpc-0ca6afdd5da9aa376"
+        },
+        {
+          "ipv4_cidr": "10.162.138.128/26",
+          "nat_ip": "13.158.91.139",
+          "subnet_name": "s2-jp-main-bbz-pri-1-c",
+          "vpc_id": "vpc-0ca6afdd5da9aa376"
+        },
+        {
+          "ipv4_cidr": "10.162.138.0/27",
+          "nat_ip": "-",
+          "subnet_name": "s2-jp-main-bbz-pub-1-a",
+          "vpc_id": "vpc-0ca6afdd5da9aa376"
+        },
+        {
+          "ipv4_cidr": "10.162.138.32/27",
+          "nat_ip": "-",
+          "subnet_name": "s2-jp-main-bbz-pub-1-c",
+          "vpc_id": "vpc-0ca6afdd5da9aa376"
+        }
+      ]
+    },
+    "game-bubblyz-sandbox-sb2-apne1-sub": {
+      "_label": "bubblyz · sandbox2 · apne1/sub",
+      "_sg_dir": "aws/sandbox/sb2/apne1/sub/sg/sg_rule",
+      "subnets": [
+        {
+          "ipv4_cidr": "10.162.140.192/27",
+          "nat_ip": "-",
+          "subnet_name": "s2-jp-sub-bbz-db-1-a",
+          "vpc_id": "vpc-03e52a58553d3ea4a"
+        },
+        {
+          "ipv4_cidr": "10.162.140.224/27",
+          "nat_ip": "-",
+          "subnet_name": "s2-jp-sub-bbz-db-1-c",
+          "vpc_id": "vpc-03e52a58553d3ea4a"
+        },
+        {
+          "ipv4_cidr": "10.162.140.64/26",
+          "nat_ip": "13.158.184.99",
+          "subnet_name": "s2-jp-sub-bbz-pri-1-a",
+          "vpc_id": "vpc-03e52a58553d3ea4a"
+        },
+        {
+          "ipv4_cidr": "10.162.140.128/26",
+          "nat_ip": "13.158.184.99",
+          "subnet_name": "s2-jp-sub-bbz-pri-1-c",
+          "vpc_id": "vpc-03e52a58553d3ea4a"
+        },
+        {
+          "ipv4_cidr": "10.162.140.0/27",
+          "nat_ip": "-",
+          "subnet_name": "s2-jp-sub-bbz-pub-1-a",
+          "vpc_id": "vpc-03e52a58553d3ea4a"
+        },
+        {
+          "ipv4_cidr": "10.162.140.32/27",
+          "nat_ip": "-",
+          "subnet_name": "s2-jp-sub-bbz-pub-1-c",
+          "vpc_id": "vpc-03e52a58553d3ea4a"
+        }
+      ]
+    },
+    "game-eclipse-live-mvf0nfc0": {
+      "_label": "eclipse · live · apne2",
+      "_sg_dir": "aws/live/apne2/sg/sg_rule",
+      "sgs": {
+        "l-k-ec-adm-ec2-sg": {
+          "alias": "",
+          "sg_id": "sg-01aaf332ddb6285bd",
+          "tags": []
+        },
+        "l-k-ec-admin-nginx-nlb-sg": {
+          "alias": "3.39.1.193, 10.198.48.100, 10.198.50.63, 10.198.52.104, 52.79.64.214, 54.180.207.212",
+          "sg_id": "sg-079a54740af769279",
+          "tags": []
+        },
+        "l-k-ec-admin-rds-sg": {
+          "alias": "10.198.49.236, 10.198.51.80, 10.198.51.89, 10.198.51.115, 10.198.51.116, 10.198.51.143, 10.198.51.146, 10.198.51.188, 10.198.53.23, 10.198.53.128 외 5개",
+          "sg_id": "sg-0663b7fce1f7da19f",
+          "tags": []
+        },
+        "l-k-ec-admn-ec2-sg": {
+          "alias": "10.198.8.160",
+          "sg_id": "sg-011aa01e1194f3a6a",
+          "tags": []
+        },
+        "l-k-ec-battle-nlb-sg": {
+          "alias": "3.34.69.177, 3.34.84.69, 3.34.106.12, 3.34.151.29, 3.34.165.33, 3.34.223.109, 3.34.224.237, 3.34.229.50, 3.34.247.14, 3.35.43.154 외 404개",
+          "sg_id": "sg-0f38a669705a7055c",
+          "tags": []
+        },
+        "l-k-ec-bkr-alb-sg": {
+          "alias": "3.37.116.222, 10.198.48.150, 10.198.52.183, 15.165.22.168",
+          "sg_id": "sg-0e779699f069f52d7",
+          "tags": []
+        },
+        "l-k-ec-bkr-ec2-sg": {
+          "alias": "10.198.7.127",
+          "sg_id": "sg-095c08a32b9ca39cd",
+          "tags": []
+        },
+        "l-k-ec-bot-nlb-sg": {
+          "alias": "",
+          "sg_id": "sg-061b44d84b11b8085",
+          "tags": []
+        },
+        "l-k-ec-bridge-nlb-sg": {
+          "alias": "3.37.53.149, 3.37.232.115, 3.39.51.59, 10.198.48.6, 10.198.48.98, 10.198.48.147, 10.198.48.159, 10.198.48.182, 10.198.50.21, 10.198.50.34 외 20개",
+          "sg_id": "sg-0f19af31e05cb1b84",
+          "tags": []
+        },
+        "l-k-ec-bridge-rds-sg": {
+          "alias": "",
+          "sg_id": "sg-05c3944d01ad536f7",
+          "tags": []
+        },
+        "l-k-ec-chat-alb-sg": {
+          "alias": "3.34.82.248, 3.34.247.74, 3.35.40.90, 3.35.43.108, 3.37.229.73, 3.38.22.127, 3.39.145.188, 3.39.212.50, 10.198.48.4, 10.198.48.7 외 50개",
+          "sg_id": "sg-038d5c90e216d148e",
+          "tags": []
+        },
+        "l-k-ec-chat-rds-sg": {
+          "alias": "",
+          "sg_id": "sg-02323669769358261",
+          "tags": []
+        },
+        "l-k-ec-dbProxy-nlb-sg": {
+          "alias": "",
+          "sg_id": "sg-0890543cf0a22f2f1",
+          "tags": []
+        },
+        "l-k-ec-dbmon-ec2-sg": {
+          "alias": "10.198.4.239",
+          "sg_id": "sg-08f80221738df97c2",
+          "tags": []
+        },
+        "l-k-ec-dtro-ec2-sg": {
+          "alias": "",
+          "sg_id": "sg-0dd5c0e756a7b79de",
+          "tags": []
+        },
+        "l-k-ec-dungeon-rds-sg": {
+          "alias": "",
+          "sg_id": "sg-021462722ec9b64ae",
+          "tags": []
+        },
+        "l-k-ec-e-ro-ec2-sg": {
+          "alias": "10.198.6.143",
+          "sg_id": "sg-08a9fe33ce5132274",
+          "tags": []
+        },
+        "l-k-ec-fortress-rds-sg": {
+          "alias": "",
+          "sg_id": "sg-09c72d582f7730389",
+          "tags": []
+        },
+        "l-k-ec-front-alb-sg": {
+          "alias": "3.34.6.99, 3.35.70.96, 3.35.98.140, 3.36.173.225, 3.38.14.27, 3.38.128.120, 10.198.48.20, 10.198.48.151, 10.198.48.165, 10.198.48.197 외 40개",
+          "sg_id": "sg-07c18e3e8818097e9",
+          "tags": []
+        },
+        "l-k-ec-game-redis-sg": {
+          "alias": "10.198.49.26, 10.198.51.242",
+          "sg_id": "sg-0450876c12cef0a2f",
+          "tags": []
+        },
+        "l-k-ec-grafana-metric-nlb-sg": {
+          "alias": "",
+          "sg_id": "sg-0ae777a0981bec504",
+          "tags": []
+        },
+        "l-k-ec-grafana-service-nlb-sg": {
+          "alias": "",
+          "sg_id": "sg-0f87de4e13bf8e959",
+          "tags": []
+        },
+        "l-k-ec-guild-rds-sg": {
+          "alias": "10.198.51.179, 10.198.53.103, 10.198.53.197",
+          "sg_id": "sg-0b7798c2e6d94c7ea",
+          "tags": []
+        },
+        "l-k-ec-hunting-rds-sg": {
+          "alias": "",
+          "sg_id": "sg-007d9725457081252",
+          "tags": []
+        },
+        "l-k-ec-item-rds-sg": {
+          "alias": "10.198.49.112, 10.198.49.113, 10.198.51.6, 10.198.51.31, 10.198.51.101, 10.198.51.119, 10.198.51.148, 10.198.51.184, 10.198.51.213, 10.198.53.4 외 5개",
+          "sg_id": "sg-02083fc5e726b2f82",
+          "tags": []
+        },
+        "l-k-ec-kafka-msk-sg": {
+          "alias": "10.198.0.101, 10.198.1.82, 10.198.1.121, 10.198.1.161, 10.198.1.213, 10.198.2.5, 10.198.3.5, 10.198.3.100, 10.198.3.229, 10.198.4.71 외 93개",
+          "sg_id": "sg-01a5520b194279455",
+          "tags": []
+        },
+        "l-k-ec-kafka-ui-external-nlb-sg": {
+          "alias": "10.198.48.229, 10.198.50.217, 10.198.52.48, 13.209.25.85, 13.209.137.92, 43.200.190.246",
+          "sg_id": "sg-06fac42a03c0a0338",
+          "tags": []
+        },
+        "l-k-ec-kafka-ui-nlb-sg": {
+          "alias": "10.198.48.49, 10.198.50.65, 10.198.52.185, 43.200.251.96, 43.201.187.108, 52.78.134.46",
+          "sg_id": "sg-0f5adca59cfdb4b71",
+          "tags": []
+        },
+        "l-k-ec-kfmon-ec2-sg": {
+          "alias": "10.198.2.141",
+          "sg_id": "sg-06833f121e98a101b",
+          "tags": []
+        },
+        "l-k-ec-lobby-alb-sg": {
+          "alias": "10.198.48.71, 10.198.48.134, 10.198.50.69, 10.198.52.247, 13.209.195.243, 52.78.130.152, 52.79.102.182, 54.117.81.123",
+          "sg_id": "sg-07b118f0d21f536aa",
+          "tags": []
+        },
+        "l-k-ec-lobby-rds-sg": {
+          "alias": "10.198.51.244, 10.198.53.85, 10.198.53.99",
+          "sg_id": "sg-069f78781b3f4826e",
+          "tags": []
+        },
+        "l-k-ec-log-opensearch-sg": {
+          "alias": "",
+          "sg_id": "sg-0d9f360a76c843c8d",
+          "tags": []
+        },
+        "l-k-ec-mail-rds-sg": {
+          "alias": "10.198.49.28, 10.198.51.36, 10.198.51.78, 10.198.51.111, 10.198.51.114, 10.198.51.133, 10.198.51.144, 10.198.51.189, 10.198.53.65, 10.198.53.74 외 5개",
+          "sg_id": "sg-0af50962b5be3d64f",
+          "tags": []
+        },
+        "l-k-ec-matchmaking-rds-sg": {
+          "alias": "10.198.49.235, 10.198.51.54, 10.198.51.58, 10.198.51.131, 10.198.51.161, 10.198.51.208, 10.198.51.226, 10.198.53.18, 10.198.53.21, 10.198.53.87 외 5개",
+          "sg_id": "sg-03e46faa7c947b059",
+          "tags": []
+        },
+        "l-k-ec-notification-rds-sg": {
+          "alias": "",
+          "sg_id": "sg-0da2a6b34998302e7",
+          "tags": []
+        },
+        "l-k-ec-npro-ec2-sg": {
+          "alias": "",
+          "sg_id": "sg-0d1e91b19936c4389",
+          "tags": []
+        },
+        "l-k-ec-pklog-rds-sg": {
+          "alias": "",
+          "sg_id": "sg-061d5b57c38b0850f",
+          "tags": []
+        },
+        "l-k-ec-quest-rds-sg": {
+          "alias": "10.198.49.51, 10.198.51.46, 10.198.51.60, 10.198.51.92, 10.198.51.150, 10.198.51.187, 10.198.51.204, 10.198.51.254, 10.198.53.33, 10.198.53.69 외 5개",
+          "sg_id": "sg-0b9a9c771596adc77",
+          "tags": []
+        },
+        "l-k-ec-ranking-rds-sg": {
+          "alias": "10.198.51.128, 10.198.53.47, 10.198.53.210",
+          "sg_id": "sg-08bad1a78a59ab8ea",
+          "tags": []
+        },
+        "l-k-ec-ro-ec2-sg": {
+          "alias": "10.198.10.99",
+          "sg_id": "sg-045c65b5938b75f7a",
+          "tags": []
+        },
+        "l-k-ec-session-rds-sg": {
+          "alias": "",
+          "sg_id": "sg-01631eac35accc16c",
+          "tags": []
+        },
+        "l-k-ec-setting-rds-sg": {
+          "alias": "",
+          "sg_id": "sg-09f8359c8d3fc7b68",
+          "tags": []
+        },
+        "l-k-ec-store-rds-sg": {
+          "alias": "10.198.51.5, 10.198.51.10, 10.198.51.26, 10.198.51.86, 10.198.51.129, 10.198.51.218, 10.198.51.227, 10.198.53.45, 10.198.53.79, 10.198.53.82 외 5개",
+          "sg_id": "sg-016a82a9873cc7bda",
+          "tags": []
+        },
+        "l-k-ec-svc-eks-cluster-sg": {
+          "alias": "10.198.24.94, 10.198.35.126",
+          "sg_id": "sg-0244a5e529089e2c7",
+          "tags": []
+        },
+        "l-k-ec-trade-rds-sg": {
+          "alias": "",
+          "sg_id": "sg-0463a1930a1c0fdba",
+          "tags": []
+        }
+      },
+      "subnets": [
+        {
+          "ipv4_cidr": "10.198.0.0/20",
+          "nat_ip": "13.209.44.176",
+          "subnet_name": "l-k-ec-pri-1-a",
+          "vpc_id": "vpc-083a8acb8a480921c"
+        },
+        {
+          "ipv4_cidr": "10.198.16.0/20",
+          "nat_ip": "52.79.148.45",
+          "subnet_name": "l-k-ec-pri-1-b",
+          "vpc_id": "vpc-083a8acb8a480921c"
+        },
+        {
+          "ipv4_cidr": "10.198.32.0/20",
+          "nat_ip": "3.38.74.207",
+          "subnet_name": "l-k-ec-pri-1-c",
+          "vpc_id": "vpc-083a8acb8a480921c"
+        },
+        {
+          "ipv4_cidr": "10.198.48.0/24",
+          "nat_ip": "-",
+          "subnet_name": "l-k-ec-pub-1-a",
+          "vpc_id": "vpc-083a8acb8a480921c"
+        },
+        {
+          "ipv4_cidr": "10.198.49.0/24",
+          "nat_ip": "-",
+          "subnet_name": "l-k-ec-db-1-a",
+          "vpc_id": "vpc-083a8acb8a480921c"
+        },
+        {
+          "ipv4_cidr": "10.198.50.0/24",
+          "nat_ip": "-",
+          "subnet_name": "l-k-ec-pub-1-b",
+          "vpc_id": "vpc-083a8acb8a480921c"
+        },
+        {
+          "ipv4_cidr": "10.198.51.0/24",
+          "nat_ip": "-",
+          "subnet_name": "l-k-ec-db-1-b",
+          "vpc_id": "vpc-083a8acb8a480921c"
+        },
+        {
+          "ipv4_cidr": "10.198.52.0/24",
+          "nat_ip": "-",
+          "subnet_name": "l-k-ec-pub-1-c",
+          "vpc_id": "vpc-083a8acb8a480921c"
+        },
+        {
+          "ipv4_cidr": "10.198.53.0/24",
+          "nat_ip": "-",
+          "subnet_name": "l-k-ec-db-1-c",
+          "vpc_id": "vpc-083a8acb8a480921c"
+        }
+      ]
+    },
+    "game-eclipse-qa2": {
+      "_label": "eclipse · qa2 · apne2",
+      "_sg_dir": "aws/qa2/apne2/sg/sg_rule",
+      "sgs": {
+        "q2-k-ec-adm-ec2-sg": {
+          "alias": "",
+          "sg_id": "sg-0b0673456d55af817",
+          "tags": []
+        },
+        "q2-k-ec-admin-nginx-nlb-sg": {
+          "alias": "10.160.208.17, 10.160.208.39, 10.160.208.82, 15.165.3.105, 43.203.96.161, 52.78.249.21",
+          "sg_id": "sg-04121aa637983ec0b",
+          "tags": []
+        },
+        "q2-k-ec-admn-ec2-sg": {
+          "alias": "10.160.209.122",
+          "sg_id": "sg-09d9611a23cb6257f",
+          "tags": []
+        },
+        "q2-k-ec-battle-nlb-sg": {
+          "alias": "3.36.183.241, 3.36.235.0, 3.37.172.207, 3.37.194.222, 3.37.233.141, 3.37.251.203, 3.38.234.227, 3.39.93.161, 3.39.159.29, 3.39.167.6 외 62개",
+          "sg_id": "sg-05e323d4f1208a0aa",
+          "tags": []
+        },
+        "q2-k-ec-bot-nlb-sg": {
+          "alias": "3.35.99.114, 3.36.222.160, 10.160.208.25, 10.160.208.51, 10.160.208.83, 43.200.73.182",
+          "sg_id": "sg-09913fa8cf4259d79",
+          "tags": []
+        },
+        "q2-k-ec-bridge-nlb-sg": {
+          "alias": "3.35.94.79, 3.37.161.193, 10.160.208.5, 10.160.208.7, 10.160.208.43, 10.160.208.55, 10.160.208.84, 10.160.208.88, 43.201.172.9, 43.202.217.123 외 2개",
+          "sg_id": "sg-007037d31dc662bf8",
+          "tags": []
+        },
+        "q2-k-ec-chat-nlb-sg": {
+          "alias": "3.35.88.194, 3.39.104.61, 10.160.208.14, 10.160.208.29, 10.160.208.44, 10.160.208.56, 10.160.208.93, 10.160.208.94, 43.200.34.174, 43.200.87.97 외 2개",
+          "sg_id": "sg-0ed688d9149e849ae",
+          "tags": []
+        },
+        "q2-k-ec-dbProxy-nlb-sg": {
+          "alias": "",
+          "sg_id": "sg-0dc37ca2d887ca2db",
+          "tags": []
+        },
+        "q2-k-ec-dtro-ec2-sg": {
+          "alias": "",
+          "sg_id": "sg-06236a19db7383103",
+          "tags": []
+        },
+        "q2-k-ec-e-ro-ec2-sg": {
+          "alias": "10.160.209.214",
+          "sg_id": "sg-010f2c60182df9c96",
+          "tags": []
+        },
+        "q2-k-ec-front-nlb-sg": {
+          "alias": "3.35.86.82, 3.38.61.70, 10.160.208.8, 10.160.208.16, 10.160.208.45, 10.160.208.58, 10.160.208.68, 10.160.208.92, 13.124.167.116, 15.165.132.200 외 2개",
+          "sg_id": "sg-05095f75c09830207",
+          "tags": []
+        },
+        "q2-k-ec-game-rds-sg": {
+          "alias": "10.160.208.177",
+          "sg_id": "sg-0fdc3006889a3e75f",
+          "tags": []
+        },
+        "q2-k-ec-game-redis-sg": {
+          "alias": "10.160.208.126, 10.160.208.236",
+          "sg_id": "sg-045ff0c1591eb2221",
+          "tags": []
+        },
+        "q2-k-ec-grafana-metric-nlb-sg": {
+          "alias": "",
+          "sg_id": "sg-0bc11ca680b6d7628",
+          "tags": []
+        },
+        "q2-k-ec-grafana-service-nlb-sg": {
+          "alias": "",
+          "sg_id": "sg-084c1c27596211418",
+          "tags": []
+        },
+        "q2-k-ec-kafka-msk-sg": {
+          "alias": "10.160.209.109, 10.160.209.234, 10.160.209.249, 10.160.210.24, 10.160.210.28, 10.160.210.110, 10.160.211.103, 10.160.211.180, 10.160.211.232, 10.160.211.233",
+          "sg_id": "sg-01b341fadacd2cb08",
+          "tags": []
+        },
+        "q2-k-ec-kafka-ui-external-nlb-sg": {
+          "alias": "10.160.208.9, 10.160.208.49, 10.160.208.86, 15.164.101.115, 43.203.41.183, 54.180.27.21",
+          "sg_id": "sg-03a7b9224453b51ff",
+          "tags": []
+        },
+        "q2-k-ec-kafka-ui-nlb-sg": {
+          "alias": "3.34.158.179, 10.160.208.27, 10.160.208.54, 10.160.208.90, 43.202.193.91, 43.203.5.83",
+          "sg_id": "sg-0220bd722a17525d2",
+          "tags": []
+        },
+        "q2-k-ec-lobby-nlb-sg": {
+          "alias": "3.34.207.109, 3.39.130.156, 10.160.208.12, 10.160.208.37, 10.160.208.69, 15.165.67.50",
+          "sg_id": "sg-003272350338cfbe2",
+          "tags": []
+        },
+        "q2-k-ec-log-opensearch-sg": {
+          "alias": "",
+          "sg_id": "sg-003243107ec20e2b2",
+          "tags": []
+        },
+        "q2-k-ec-npro-ec2-sg": {
+          "alias": "",
+          "sg_id": "sg-0bd9ac1f364df28a3",
+          "tags": []
+        },
+        "q2-k-ec-ro-ec2-sg": {
+          "alias": "10.160.209.176",
+          "sg_id": "sg-045f81ae8d10088c1",
+          "tags": []
+        },
+        "q2-k-ec-svc-eks-cluster-sg": {
+          "alias": "10.160.210.35, 10.160.211.162",
+          "sg_id": "sg-03af7a29099872e50",
+          "tags": []
+        }
+      },
+      "subnets": [
+        {
+          "ipv4_cidr": "10.160.192.0/25",
+          "nat_ip": "3.34.225.20",
+          "subnet_name": "q2-k-ec-pri-2-a",
+          "vpc_id": "vpc-08c06808c604613c4"
+        },
+        {
+          "ipv4_cidr": "10.160.192.128/25",
+          "nat_ip": "3.34.225.20",
+          "subnet_name": "q2-k-ec-pri-2-b",
+          "vpc_id": "vpc-08c06808c604613c4"
+        },
+        {
+          "ipv4_cidr": "10.160.193.0/25",
+          "nat_ip": "3.34.225.20",
+          "subnet_name": "q2-k-ec-pri-2-c",
+          "vpc_id": "vpc-08c06808c604613c4"
+        },
+        {
+          "ipv4_cidr": "10.160.193.128/27",
+          "nat_ip": "-",
+          "subnet_name": "q2-k-ec-pub-2-a",
+          "vpc_id": "vpc-08c06808c604613c4"
+        },
+        {
+          "ipv4_cidr": "10.160.193.160/27",
+          "nat_ip": "-",
+          "subnet_name": "q2-k-ec-pub-2-b",
+          "vpc_id": "vpc-08c06808c604613c4"
+        },
+        {
+          "ipv4_cidr": "10.160.193.192/27",
+          "nat_ip": "-",
+          "subnet_name": "q2-k-ec-pub-2-c",
+          "vpc_id": "vpc-08c06808c604613c4"
+        },
+        {
+          "ipv4_cidr": "10.160.208.0/27",
+          "nat_ip": "-",
+          "subnet_name": "q2-k-ec-pub-1-a",
+          "vpc_id": "vpc-08c06808c604613c4"
+        },
+        {
+          "ipv4_cidr": "10.160.208.128/26",
+          "nat_ip": "-",
+          "subnet_name": "q2-k-ec-db-1-b",
+          "vpc_id": "vpc-08c06808c604613c4"
+        },
+        {
+          "ipv4_cidr": "10.160.208.192/26",
+          "nat_ip": "-",
+          "subnet_name": "q2-k-ec-db-1-c",
+          "vpc_id": "vpc-08c06808c604613c4"
+        },
+        {
+          "ipv4_cidr": "10.160.208.32/27",
+          "nat_ip": "-",
+          "subnet_name": "q2-k-ec-pub-1-b",
+          "vpc_id": "vpc-08c06808c604613c4"
+        },
+        {
+          "ipv4_cidr": "10.160.208.64/27",
+          "nat_ip": "-",
+          "subnet_name": "q2-k-ec-pub-1-c",
+          "vpc_id": "vpc-08c06808c604613c4"
+        },
+        {
+          "ipv4_cidr": "10.160.208.96/27",
+          "nat_ip": "-",
+          "subnet_name": "q2-k-ec-db-1-a",
+          "vpc_id": "vpc-08c06808c604613c4"
+        },
+        {
+          "ipv4_cidr": "10.160.209.0/24",
+          "nat_ip": "3.34.225.20",
+          "subnet_name": "q2-k-ec-pri-1-a",
+          "vpc_id": "vpc-08c06808c604613c4"
+        },
+        {
+          "ipv4_cidr": "10.160.210.0/24",
+          "nat_ip": "3.34.225.20",
+          "subnet_name": "q2-k-ec-pri-1-b",
+          "vpc_id": "vpc-08c06808c604613c4"
+        },
+        {
+          "ipv4_cidr": "10.160.211.0/24",
+          "nat_ip": "3.34.225.20",
+          "subnet_name": "q2-k-ec-pri-1-c",
+          "vpc_id": "vpc-08c06808c604613c4"
+        }
+      ]
+    },
+    "platform-gaap-sandbox-gaap-sandbox": {
+      "_label": "gaap-sandbox · gaap-sandbox · apne1/sandbox",
+      "_sg_dir": "aws/gaap-sandbox/apne1/sandbox/sg/sg_rule",
+      "sgs": {}
+    },
+    "platform-megaport-sip-live-apne1-ugc-sandbox": {
+      "_label": "megaport-sip-live · megaport-sip-live · apne1/ugc-sandbox",
+      "_sg_dir": "aws/megaport-sip-live/apne1/ugc-sandbox/sg/sg_rule",
+      "sgs": {
+        "external-ugc-client-alloy": {
+          "alias": "10.229.147.54, 10.229.147.86, 35.74.102.69, 35.77.168.113",
+          "sg_id": "sg-0f99ceca29a5d0665",
+          "tags": []
+        },
+        "external-ugc-regional-otel-collector": {
+          "alias": "10.229.147.41, 10.229.147.73, 54.64.62.203, 54.168.110.136",
+          "sg_id": "sg-0bf219ed7df485595",
+          "tags": [
+            {
+              "type": "",
+              "value": "apne1-sip-ugc-regional-otel-sb.sgmon.net"
+            }
+          ]
+        }
+      },
+      "subnets": [
+        {
+          "ipv4_cidr": "10.229.144.0/24",
+          "nat_ip": "16.76.27.212",
+          "subnet_name": "ugc-sandbox-apne1-sip-pri-1-a-3f33",
+          "vpc_id": "vpc-0f13d3c38ad664425"
+        },
+        {
+          "ipv4_cidr": "10.229.145.0/24",
+          "nat_ip": "13.192.143.60",
+          "subnet_name": "ugc-sandbox-apne1-sip-pri-1-c-3f33",
+          "vpc_id": "vpc-0f13d3c38ad664425"
+        },
+        {
+          "ipv4_cidr": "10.229.146.0/26",
+          "nat_ip": "-",
+          "subnet_name": "ugc-sandbox-apne1-sip-db-1-a-3f33",
+          "vpc_id": "vpc-0f13d3c38ad664425"
+        },
+        {
+          "ipv4_cidr": "10.229.146.64/26",
+          "nat_ip": "-",
+          "subnet_name": "ugc-sandbox-apne1-sip-db-1-c-3f33",
+          "vpc_id": "vpc-0f13d3c38ad664425"
+        },
+        {
+          "ipv4_cidr": "10.229.147.0/26",
+          "nat_ip": "-",
+          "subnet_name": "ugc-sandbox-apne1-sip-pub-1-a-3f33",
+          "vpc_id": "vpc-0f13d3c38ad664425"
+        },
+        {
+          "ipv4_cidr": "10.229.147.128/26",
+          "nat_ip": "16.76.27.212",
+          "subnet_name": "ugc-sandbox-apne1-sip-endpoint-1-a-3f33",
+          "vpc_id": "vpc-0f13d3c38ad664425"
+        },
+        {
+          "ipv4_cidr": "10.229.147.192/26",
+          "nat_ip": "13.192.143.60",
+          "subnet_name": "ugc-sandbox-apne1-sip-endpoint-1-c-3f33",
+          "vpc_id": "vpc-0f13d3c38ad664425"
+        },
+        {
+          "ipv4_cidr": "10.229.147.64/26",
+          "nat_ip": "-",
+          "subnet_name": "ugc-sandbox-apne1-sip-pub-1-c-3f33",
+          "vpc_id": "vpc-0f13d3c38ad664425"
+        }
+      ]
+    },
+    "platform-megaport-sip-qa-megaport-sip-qa": {
+      "_label": "megaport-sip-qa · megaport-sip-qa · apne2/qa",
+      "_sg_dir": "aws/megaport-sip-qa/apne2/qa/sg/sg_rule",
+      "nat_ips": [],
+      "note": "",
+      "sgs": {
+        "external-lb": {
+          "alias": "",
+          "sg_id": "sg-08aa4b78cbb168148",
+          "tags": []
+        },
+        "grafana-meta-db-rds": {
+          "alias": "",
+          "sg_id": "grafana-meta-db-rds",
+          "tags": []
+        },
+        "internal-lb": {
+          "alias": "",
+          "sg_id": "sg-09457654edd5f9a7f",
+          "tags": []
+        },
+        "sip-docdb": {
+          "alias": "",
+          "sg_id": "sg-0b6608e9e50971b80",
+          "tags": []
+        },
+        "sip-v2-int-lb": {
+          "alias": "",
+          "sg_id": "sg-0a12e84ac08e90fcf",
+          "tags": []
+        }
+      },
+      "vpc_cidrs": []
+    },
+    "platform-mgmt-mgmt": {
+      "_label": "mgmt · mgmt · apne2",
+      "_sg_dir": "aws/mgmt/apne2/sg/sg_rule",
+      "sgs": {
+        "keycloak-alb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "keycloak-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "mgmt-apne2-stove-qa-ecl-argocd-alb-sg-egress-rules": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "mgmt-apne2-stove-qa-ecl-argocd-alb-sg-ingress-rules": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "platform-atlantis-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        }
+      }
+    },
+    "platform-stove-platform-dev-apne2-dev": {
+      "_label": "stove-platform-dev · stove-platform-dev · apne2/dev",
+      "_sg_dir": "aws/stove-platform-dev/apne2/dev/sg/sg_rule",
+      "sgs": {
+        "bubzmg-ec2": {
+          "alias": "",
+          "sg_id": "sg-097d69a8b8a8e1d2c",
+          "tags": []
+        },
+        "cf-pl-lb": {
+          "alias": "",
+          "sg_id": "sg-04dba96c2cd320c07",
+          "tags": []
+        },
+        "istio-be-ext-lb": {
+          "alias": "3.37.96.130, 10.171.194.198, 10.171.199.73, 13.124.180.173",
+          "sg_id": "sg-04ee27b1741022fdf",
+          "tags": []
+        },
+        "istio-be-int-lb": {
+          "alias": "10.171.15.254, 10.171.100.111",
+          "sg_id": "sg-0e11e1b1c27e33b64",
+          "tags": []
+        },
+        "istio-fe-ext-lb": {
+          "alias": "10.171.195.42, 10.171.198.115, 43.202.17.51, 43.203.78.223",
+          "sg_id": "sg-0e0e7add00b79c7e4",
+          "tags": []
+        },
+        "istio-fe-int-lb": {
+          "alias": "10.171.1.138, 10.171.124.54",
+          "sg_id": "sg-0cc6ad4c0c0962c5b",
+          "tags": []
+        },
+        "keycloak-alb": {
+          "alias": "10.171.50.229, 10.171.78.55",
+          "sg_id": "sg-018d7b361cec9033b",
+          "tags": [
+            {
+              "type": "",
+              "value": "id-dev.platform.sginfra.net"
+            }
+          ]
+        },
+        "keycloak-db": {
+          "alias": "10.171.208.240, 10.171.214.148",
+          "sg_id": "sg-00848ed4e2e06aeb3",
+          "tags": []
+        },
+        "redis-elasticache": {
+          "alias": "10.171.209.17, 10.171.214.161",
+          "sg_id": "sg-0a6e3cff700df72da",
+          "tags": []
+        },
+        "ugc-docdb-db": {
+          "alias": "10.171.215.13, 10.171.215.104",
+          "sg_id": "sg-04812268833208240",
+          "tags": []
+        }
+      },
+      "subnets": [
+        {
+          "ipv4_cidr": "10.171.0.0/18",
+          "nat_ip": "3.39.75.119",
+          "subnet_name": "dev-apne2-stove-pri-1-a",
+          "vpc_id": "vpc-01e002e9e973d116c"
+        },
+        {
+          "ipv4_cidr": "10.171.192.0/22",
+          "nat_ip": "-",
+          "subnet_name": "dev-apne2-stove-pub-1-a",
+          "vpc_id": "vpc-01e002e9e973d116c"
+        },
+        {
+          "ipv4_cidr": "10.171.196.0/22",
+          "nat_ip": "-",
+          "subnet_name": "dev-apne2-stove-pub-1-c",
+          "vpc_id": "vpc-01e002e9e973d116c"
+        },
+        {
+          "ipv4_cidr": "10.171.208.0/22",
+          "nat_ip": "-",
+          "subnet_name": "dev-apne2-stove-db-1-a",
+          "vpc_id": "vpc-01e002e9e973d116c"
+        },
+        {
+          "ipv4_cidr": "10.171.212.0/22",
+          "nat_ip": "-",
+          "subnet_name": "dev-apne2-stove-db-1-c",
+          "vpc_id": "vpc-01e002e9e973d116c"
+        },
+        {
+          "ipv4_cidr": "10.171.254.0/25",
+          "nat_ip": "3.39.75.119",
+          "subnet_name": "dev-apne2-stove-mgmt-a",
+          "vpc_id": "vpc-01e002e9e973d116c"
+        },
+        {
+          "ipv4_cidr": "10.171.254.128/25",
+          "nat_ip": "3.39.75.119",
+          "subnet_name": "dev-apne2-stove-mgmt-c",
+          "vpc_id": "vpc-01e002e9e973d116c"
+        },
+        {
+          "ipv4_cidr": "10.171.255.0/25",
+          "nat_ip": "-",
+          "subnet_name": "dev-apne2-stove-eks-ctrl-a",
+          "vpc_id": "vpc-01e002e9e973d116c"
+        },
+        {
+          "ipv4_cidr": "10.171.255.128/25",
+          "nat_ip": "-",
+          "subnet_name": "dev-apne2-stove-eks-ctrl-c",
+          "vpc_id": "vpc-01e002e9e973d116c"
+        },
+        {
+          "ipv4_cidr": "10.171.64.0/18",
+          "nat_ip": "3.39.75.119",
+          "subnet_name": "dev-apne2-stove-pri-1-c",
+          "vpc_id": "vpc-01e002e9e973d116c"
+        }
+      ]
+    },
+    "platform-stove-platform-dev-stove-platform-dev": {
+      "_label": "stove-platform-dev · stove-platform-dev · apne1/dev",
+      "_sg_dir": "aws/stove-platform-dev/apne1/dev/sg/sg_rule",
+      "sgs": {
+        "bill-cpm-pg-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "istio-be-ext-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "istio-be-int-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "istio-fe-ext-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "istio-fe-int-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "kafka-ui-int-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "redis-elasticache": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "std-kst-loose-lc1-aurora-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "std-utc-fstrict-lc1-aurora-db": {
+          "alias": "onstove-dev-apne1-std-utc-fstrict-lc1-db-a.coutaassbjft.ap-northeast-1.rds.amazonaws.com, onstove-dev2-apne1-std-utc-fstrict-lc1-db.cluster-coutaassbjft.ap-northeast-1.rds.amazonaws.com",
+          "sg_id": "",
+          "tags": [
+            {
+              "type": "",
+              "value": "10.157.227.159"
+            },
+            {
+              "type": "",
+              "value": "10.157.226.235"
+            }
+          ]
+        },
+        "std-utc-loose-lc0-aurora-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "std-utc-strict-lc1-aurora-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        }
+      },
+      "subnets": []
+    },
+    "platform-stove-platform-live-stove-platform-live": {
+      "_label": "stove-platform-live · stove-platform-live · apne1/live",
+      "_sg_dir": "aws/stove-platform-live/apne1/live/sg/sg_rule",
+      "sgs": {
+        "bill-cpm-pg-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "couponb-ec2": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "istio-be-ext-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "istio-be-int-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "istio-fe-ext-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "istio-fe-int-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "kafka-cluster-msk": {
+          "alias": "10.156.12.202, 10.156.6.151, 10.156.23.252",
+          "sg_id": "",
+          "tags": [
+            {
+              "type": "",
+              "value": "b-1.stoveplatformlive.sy8e9m.c2.kafka.ap-northeast-1.amazonaws.com"
+            },
+            {
+              "type": "",
+              "value": "b-2.stoveplatformlive.sy8e9m.c2.kafka.ap-northeast-1.amazonaws.com"
+            },
+            {
+              "type": "",
+              "value": "b-3.stoveplatformlive.sy8e9m.c2.kafka.ap-northeast-1.amazonaws.com"
+            }
+          ]
+        },
+        "kafka-ui-int-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "messenger-docdb-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "msg-channel-aurora-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "redis-elasticache": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "restriction-aurora-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "store-personal-aurora-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "ucoin-aurora-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "ucoin-docdb-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "ugc-docdb-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        }
+      }
+    },
+    "platform-stove-platform-perf-stove-platform-perf": {
+      "_label": "stove-platform-perf · stove-platform-perf · apne1/perf",
+      "_sg_dir": "aws/stove-platform-perf/apne1/perf/sg/sg_rule",
+      "sgs": {
+        "bill-cpm-pg-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "istio-be-ext-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "istio-be-int-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "istio-fe-ext-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "istio-fe-int-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "kafka-cluster-msk": {
+          "alias": "10.157.65.176, 10.157.79.175",
+          "sg_id": "",
+          "tags": [
+            {
+              "type": "",
+              "value": "b-1.stoveplatformperf.szjfmb.c3.kafka.ap-northeast-1.amazonaws.com"
+            },
+            {
+              "type": "",
+              "value": "b-2.stoveplatformperf.szjfmb.c3.kafka.ap-northeast-1.amazonaws.com"
+            }
+          ]
+        },
+        "kafka-ui-int-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "loadrunner-node-ec2": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "msg-channel-aurora-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "qm-quick": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "redis-elasticache": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "restriction-aurora-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "store-personal-aurora-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "ucoin-docdb-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "ugc-docdb-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        }
+      }
+    },
+    "platform-stove-platform-qa-stove-platform-qa": {
+      "_label": "stove-platform-qa · stove-platform-qa · apne1/qa",
+      "_sg_dir": "aws/stove-platform-qa/apne1/qa/sg/sg_rule",
+      "sgs": {
+        "bill-cpm-pg-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "istio-be-ext-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "istio-be-int-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "istio-fe-ext-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "istio-fe-int-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "kafka-cluster-msk": {
+          "alias": "10.157.135.225, 10.157.141.223, 10.157.149.101",
+          "sg_id": "",
+          "tags": [
+            {
+              "type": "",
+              "value": "b-1.stoveplatformqast.z0nzx2.c3.kafka.ap-northeast-1.amazonaws.com"
+            },
+            {
+              "type": "",
+              "value": "b-3.stoveplatformqast.z0nzx2.c3.kafka.ap-northeast-1.amazonaws.com"
+            },
+            {
+              "type": "",
+              "value": "b-1.stoveplatformqast.z0nzx2.c3.kafka.ap-northeast-1.amazonaws.com"
+            }
+          ]
+        },
+        "kafka-ui-int-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "std-kst-loose-lc1-aurora-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "std-utc-fstrict-lc1-aurora-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "std-utc-loose-lc0-aurora-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "std-utc-strict-lc1-aurora-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        }
+      }
+    },
+    "platform-stove-platform-sandbox-apne1-sandbox": {
+      "_label": "stove-platform-sandbox · stove-platform-sandbox · apne1/sandbox",
+      "_sg_dir": "aws/stove-platform-sandbox/apne1/sandbox/sg/sg_rule",
+      "sgs": {
+        "bill-cpm-pg-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "couponb-ec2": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "istio-be-ext-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "istio-be-int-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "istio-fe-ext-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "istio-fe-int-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "kafka-cluster-msk": {
+          "alias": "10.157.0.134, 10.157.12.185",
+          "sg_id": "",
+          "tags": [
+            {
+              "type": "",
+              "value": "b-1.stoveplatformsand.fet4jk.c2.kafka.ap-northeast-1.amazonaws.com"
+            },
+            {
+              "type": "",
+              "value": "b-2.stoveplatformsand.fet4jk.c2.kafka.ap-northeast-1.amazonaws.com"
+            }
+          ]
+        },
+        "kafka-ui-int-lb": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "msg-channel-aurora-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "ppool-aurora-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "redis-elasticache": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "restriction-aurora-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "sandbox-apne1-stove-couponb-ec2": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "store-personal-aurora-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "ucoin-aurora-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "ucoin-docdb-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        },
+        "ugc-docdb-db": {
+          "alias": "",
+          "sg_id": "",
+          "tags": []
+        }
+      }
+    },
+    "platform-stove-platform-sandbox-stove-platform-sandbox": {
+      "_label": "stove-platform-sandbox · stove-platform-sandbox · apne1/sandbox/old",
+      "_sg_dir": "aws/stove-platform-sandbox/apne1/sandbox/old/sg/sg_rule",
+      "sgs": {}
+    },
+    "game-bubblyz-sandbox-sb0-apse1-sub": {
+      "sgs": {},
+      "_sg_dir": "aws/sandbox/sb0/apse1/sub/sg/sg_rule",
+      "_label": "bubblyz · sandbox0 · apse1/sub"
+    },
+    "platform-gaap-qa-gaap-qa": {
+      "sgs": {
+        "bmf-vpc-endpoint": {
+          "sg_id": "",
+          "alias": "",
+          "owner": "",
+          "tags": []
+        },
+        "istio-be-ext-lb": {
+          "sg_id": "",
+          "alias": "35.73.178.146, 16.76.11.40, 13.193.231.251",
+          "owner": "",
+          "tags": [
+            {
+              "type": "",
+              "value": "api-qa.zammyverse.com"
+            }
+          ]
+        },
+        "istio-be-int-lb": {
+          "sg_id": "sg-0e138cc8b4fbe1082",
+          "alias": "10.221.133.213, 10.221.142.189, 10.221.150.76",
+          "owner": "",
+          "tags": [
+            {
+              "type": "",
+              "value": "i-api-qa.zammyverse.com"
+            }
+          ]
+        },
+        "istio-fe-ext-lb": {
+          "sg_id": "",
+          "alias": "",
+          "owner": "",
+          "tags": []
+        },
+        "istio-fe-int-lb": {
+          "sg_id": "",
+          "alias": "",
+          "owner": "",
+          "tags": []
+        },
+        "kafka-cluster-msk": {
+          "sg_id": "",
+          "alias": "",
+          "owner": "",
+          "tags": []
+        },
+        "media-aurora-db": {
+          "sg_id": "",
+          "alias": "",
+          "owner": "",
+          "tags": []
+        },
+        "messenger-docdb-db": {
+          "sg_id": "",
+          "alias": "",
+          "owner": "",
+          "tags": []
+        },
+        "msg-chat-lb": {
+          "sg_id": "",
+          "alias": "",
+          "owner": "",
+          "tags": []
+        },
+        "msg-chat-stable-lb": {
+          "sg_id": "",
+          "alias": "",
+          "owner": "",
+          "tags": []
+        },
+        "msg-chat-sync-lb": {
+          "sg_id": "",
+          "alias": "",
+          "owner": "",
+          "tags": []
+        },
+        "opensearch-cluster-opensearch": {
+          "sg_id": "",
+          "alias": "",
+          "owner": "",
+          "tags": []
+        },
+        "redis-elasticache": {
+          "sg_id": "",
+          "alias": "",
+          "owner": "",
+          "tags": []
+        },
+        "ucoin-aurora-db": {
+          "sg_id": "",
+          "alias": "",
+          "owner": "",
+          "tags": []
+        },
+        "ugc-docdb-db": {
+          "sg_id": "",
+          "alias": "",
+          "owner": "",
+          "tags": []
+        }
+      },
+      "_sg_dir": "aws/gaap-qa/apne1/qa/sg/sg_rule",
+      "_label": "gaap-qa · gaap-qa · apne1/qa"
+    }
+  }
+}

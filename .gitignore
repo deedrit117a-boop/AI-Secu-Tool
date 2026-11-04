@@ -1,0 +1,14 @@
+data/local.json
+__pycache__/
+*.tmp
+data/plans.json
+data/history.json
+data/backup/
+data/app.log*
+dist/
+data/undo.json
+repos/
+data/aws_ca_bundle.pem
+data/excel_log.json
+data/excel_pending.json
+data/excel_backup/
